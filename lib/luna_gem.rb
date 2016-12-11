@@ -23,6 +23,24 @@ class LunaGem
     JSON.parse(response.body)
   end
 
+  def get_messages(page_num=nil)
+    end_point = page_num == nil ? "message_threads" : "message_threads?page=#{page_num}"
+    response = self.class.get(api_url(end_point), headers: { "authorization" => @auth_token })
+    JSON.parse(response.body)
+  end
+
+  def create_message(sender, recipient_id, subject=nil, stripped_text)
+    response = self.class.post(api_url("messages"),
+      body: {
+        "sender": sender,
+        "recipient_id": recipient_id,
+        "subject": subject,
+        "stripped-text": stripped_text
+      },
+      headers: { "authorization" => @auth_token })
+    puts response
+  end
+
 private
 
   def api_url(end_point)
