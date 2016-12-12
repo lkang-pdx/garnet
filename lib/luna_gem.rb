@@ -15,18 +15,18 @@ class LunaGem
 
   def get_me
     response = self.class.get(api_url("users/me"), headers: { "authorization" => @auth_token })
-    JSON.parse(response.body)
+    @user = JSON.parse(response.body)
   end
 
   def get_mentor_availability(mentor_id)
     response = self.class.get(api_url("mentors/#{mentor_id}/student_availability"), headers: { "authorization" => @auth_token })
-    JSON.parse(response.body)
+    @mentor = JSON.parse(response.body)
   end
 
   def get_messages(page_num=nil)
     end_point = page_num == nil ? "message_threads?page=1" : "message_threads?page=#{page_num}"
     response = self.class.get(api_url(end_point), headers: { "authorization" => @auth_token })
-    JSON.parse(response.body)
+    @messages = JSON.parse(response.body)
   end
 
   def create_message(sender, recipient_id, subject=nil, stripped_text)

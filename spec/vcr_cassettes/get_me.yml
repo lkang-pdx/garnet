@@ -1,0 +1,127 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://www.bloc.io/api/v1/sessions
+    body:
+      encoding: UTF-8
+      string: email=<EMAIL>&password=<PASSWORD>
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Mon, 12 Dec 2016 23:28:42 GMT
+      Connection:
+      - keep-alive
+      Strict-Transport-Security:
+      - max-age=31536000
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - '"6d9e88434292b9c1ae5772c3d5cb7282"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Set-Cookie:
+      - XSRF-TOKEN=c0lQmL36EsDg2%2FU6M7btYMZWmHsD1AcJLwRi%2Ft1iUF4%3D; path=/; secure
+      - _BlocAlpha_session2=Y3c0eEVpZ243MStqVFN4M2Z2allkVnNkSGhpZU41aDJkb2lDUVNCUkVKT3BNSEpob2NTcDlGMS8zcFhVVDF1QTEzb0w5bXo0QktGSlQ2TVpsTHlQenNKSzJRTmFGd3p1SnN6YTBSRHNpY3dTdkh1aCtrY3VOcDhPbUk5cjR4TE9vazFQb2xUYkxqQ2tQOW13V3AxZjloeWtqMXNaWTdzT3E5amo0S2Y1dHZZOUI4dU5TNS83dDJUb045L0V4WmxaMDhpY0s2dlkvNnN4dFV4TFZLdEFWZz09LS01djZGalBXbksxZFdWd2RwdGV2Z2d3PT0%3D--3dd8de9be1f51f908c4eca4b629258b4b14c27b1;
+        domain=.bloc.io; path=/; secure; HttpOnly
+      - ahoy_visit=7b543345-b76d-4534-8296-c3323c06ec80; path=/; expires=Tue, 13 Dec
+        2016 03:28:42 -0000; secure
+      - ahoy_visitor=65000108-eb7b-4450-bd4f-939e04fca0eb; path=/; expires=Wed, 12
+        Dec 2018 23:28:42 -0000; secure
+      X-Request-Id:
+      - 2634704d-5363-4e7b-832d-fb69da0f7896
+      X-Runtime:
+      - '0.488457'
+      Vary:
+      - Accept-Encoding
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: ASCII-8BIT
+      string: '{"auth_token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhcGlfa2V5IjoiNTgxYjI3NDk1YWI4NDBmZjhjMmE1ZTUxYjdiZjIyYTgiLCJ1c2VyX2lkIjoyMzQ1MTYyLCJuYW1lIjoiTHVuYSBLYW5nIn0.JBJbGBUIpSxt8oguBCwpeAuAUSx_GBoDTFIblxfY7v0","user":{"id":2345162,"email":"luna.kang.ca@gmail.com","created_at":"2016-06-21T23:54:19.525Z","updated_at":"2016-12-12T23:17:06.267Z","facebook_id":"10211274079914777","first_name":"Luna","last_name":"Kang","role":"user","stripe_customer_id":"cus_8gLOkAWO8EUPmc","twitter_handle":null,"skype_handle":null,"github_handle":"lkang-pdx","time_zone":"Pacific
+        Time (US \u0026 Canada)","bio":"","photo_file_name":"Women_Tech_HShots_255v2.jpg","photo_content_type":"image/jpeg","photo_file_size":2207970,"photo_updated_at":"2016-07-18T14:51:20.635Z","send_new_message_emails":true,"referred_by_id":null,"slug":"luna-kang","os":"OS
+        X","last_seen_at":"2016-12-12T23:17:06.201Z","private_profile":false,"google_plus_id":null,"linkedin":"www.linkedin.com/in/lunakang/","quota":0,"old_first_visit_id":null,"selected_enrollment_chain_id":5054,"phone_num":"","title":null,"quota_limit":0,"dribbble_handle":null,"codecademy_handle":"lkang-pdx","student_profile_id":null,"birthdate":"1980-03-15","gender":"Female","first_visit_id":null,"codewars_handle":"lkang-pdx"}}'
+    http_version: 
+  recorded_at: Mon, 12 Dec 2016 23:28:42 GMT
+- request:
+    method: get
+    uri: https://www.bloc.io/api/v1/users/me
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhcGlfa2V5IjoiNTgxYjI3NDk1YWI4NDBmZjhjMmE1ZTUxYjdiZjIyYTgiLCJ1c2VyX2lkIjoyMzQ1MTYyLCJuYW1lIjoiTHVuYSBLYW5nIn0.JBJbGBUIpSxt8oguBCwpeAuAUSx_GBoDTFIblxfY7v0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Mon, 12 Dec 2016 23:28:42 GMT
+      Connection:
+      - keep-alive
+      Strict-Transport-Security:
+      - max-age=31536000
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - '"f3233a0970920afc2ec82aff9b15a3c7"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Set-Cookie:
+      - XSRF-TOKEN=c08xmSY%2BGvkJvHAnX3Te6wEfH44ra3jUklKElHAwNSc%3D; path=/; secure
+      - _BlocAlpha_session2=cFJRRDBKbk5kWHpjdzQrbGtRNThnUWUrMEdSTmpHZmgwd3E3ODY4eDNTcFVwN2NCdTBzSlV5ZzhabWIxV0ROUWRRUVJVYTh4UkQxTjZsZVNkM1dreGVLZHZvaFhDN2o2eGlFeUlWVU13V29uZ242c0RCZlBsTm0zdFd0VkFPK0xBKzFoMEFtOXlHSVp2bjVCN2luYzVBN3ZZbm00V2p6RTkrNVQ1aUw3dVJNL1d6aFNDR2FtZXliTHJRU0NYUlVtclRFWXNkTVpseXdkVTF1Z09FOVJteVlzY0tucFRWT01OdEMydmtxWXh1ajRBTVRocEN4Q3BYSVgwMS81ZjlDbHFJUVNjN1o5WFRGYXNyT2dxY3pEcExTT2RlREFHVVBYMmRZQTh3NHIvcHdOMkswaU5iS1E1ZzJheGFFcG5QNVUtLTU0WG1QUERyc0ZTQWFrMkRpZy8vOWc9PQ%3D%3D--e5ebbcb144ee4c80f5f727a8d54186ccec9b1939;
+        domain=.bloc.io; path=/; secure; HttpOnly
+      - ahoy_track=true; path=/; secure
+      - ahoy_visit=dbcc6dc8-f858-4150-b59c-2ef3e571cb9d; path=/; expires=Tue, 13 Dec
+        2016 03:28:43 -0000; secure
+      - ahoy_visitor=7f99615a-0f8c-4713-a6f9-99ba49cedd23; path=/; expires=Wed, 12
+        Dec 2018 23:28:43 -0000; secure
+      X-Request-Id:
+      - d65c64fd-3e08-4e75-93f0-f32d4aee792a
+      X-Runtime:
+      - '0.132844'
+      Vary:
+      - Accept-Encoding
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"id":2345162,"slug":"luna-kang","name":"Luna Kang","email":"luna.kang.ca@gmail.com","title":null,"first_name":"Luna","last_name":"Kang","facebook_id":"10211274079914777","url":"/users/luna-kang","bio":"","course":{"id":49,"name":"Part-Time
+        Web Developer Track","length":27,"kind":"part_time_web_dev_track","appointments_per_week":2},"current_enrollment":{"id":19582,"created_at":"2016-11-25T16:40:56.366-08:00","updated_at":"2016-12-12T09:42:59.265-08:00","cohort_id":null,"status":"active","mentor_id":623967,"deleted":false,"onboarded":true,"dropped_out_at":null,"birth_date":"2016-11-25T16:40:56.248-08:00","roadmap_id":37,"course_end_date":"2017-02-19T00:00:00.000-08:00","course_start_date":"2016-07-18T00:00:00.000-07:00","death_date":null,"sent_get_started_email":false,"course_id":49,"old_visit_id":null,"certified":false,"locked_message":"","latest":true,"chain_id":5054,"roadmap_ref":"11af8519-6246-45f5-87b7-6607f82fd92e|0","visit_id":"49aae30b-0f38-412b-8593-3903bb723b6b"},"quota":0,"quota_limit":0,"type":"Student","status":"active","image_src":"https://cdn-photos.bloc.io/original/2345162/Women_Tech_HShots_255v2.jpg?1468853480","large_image_src":"https://cdn-photos.bloc.io/large/2345162/Women_Tech_HShots_255v2.jpg?1468853480","created_at":"2016-06-21
+        16:54:19 -0700","facebook_profile_picture_url":"http://graph.facebook.com/10211274079914777/picture?width=110\u0026height=110","github_handle":"lkang-pdx","codecademy_handle":"lkang-pdx","student":true,"time_zone":{"name":"Pacific
+        Time (US \u0026 Canada)","string":"(GMT-08:00) Pacific Time (US \u0026 Canada)","identifier":"America/Los_Angeles"}}'
+    http_version: 
+  recorded_at: Mon, 12 Dec 2016 23:28:43 GMT
+recorded_with: VCR 3.0.3

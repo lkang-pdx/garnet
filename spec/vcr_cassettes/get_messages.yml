@@ -1,0 +1,140 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://www.bloc.io/api/v1/sessions
+    body:
+      encoding: UTF-8
+      string: email=<EMAIL>&password=<PASSWORD>
+    headers: {}
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Mon, 12 Dec 2016 23:28:43 GMT
+      Connection:
+      - keep-alive
+      Strict-Transport-Security:
+      - max-age=31536000
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - '"9f3369bb23f8764579b3218a33154a84"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Set-Cookie:
+      - XSRF-TOKEN=9PiEamBkxqVaKOVNJ7JIq0Tr46UADrhixgvkQkMJsZw%3D; path=/; secure
+      - _BlocAlpha_session2=eCsyM1hOTVpzOTlzZmFjN1djV1lWS2hmbUdEMVd3ODNPbHNpQUsya0l2LysrdU90eGhwdHBkN05tTmVHZ0NtQUd2cUV4MERMOUJUMHR2Nmt3S3hRQTllSHhEV2NXMkplcWZ0YVR6MDkrQUhack1BOXFNZ2hibE53dEpxY3dWQldrZzNJcXlWL3Q5ZVRTWDJvZHQ5endrTjVJbE1vaUpCOFBNWDBDTzFYMmtTUG5idG1LZWxBSnhtOVZyWDhrdm4yRXNOOHk2YzVjWGQwYUlNcld6ZmdEZz09LS1XTFZ0amxuVlRyRWoxdkV5RjVlZWlBPT0%3D--f022afd959b1ed841e6c5ab262e0cf44a035d774;
+        domain=.bloc.io; path=/; secure; HttpOnly
+      - ahoy_track=true; path=/; secure
+      - ahoy_visit=6265f164-6c30-4ef1-b8ee-e09d8f9bfa9f; path=/; expires=Tue, 13 Dec
+        2016 03:28:44 -0000; secure
+      - ahoy_visitor=cccaa31d-29db-48c2-8937-eeb55ae09030; path=/; expires=Wed, 12
+        Dec 2018 23:28:44 -0000; secure
+      X-Request-Id:
+      - 4598e2dd-cb7d-45c0-97b4-92540f6bb53c
+      X-Runtime:
+      - '0.092179'
+      Vary:
+      - Accept-Encoding
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"auth_token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhcGlfa2V5IjoiNTgxYjI3NDk1YWI4NDBmZjhjMmE1ZTUxYjdiZjIyYTgiLCJ1c2VyX2lkIjoyMzQ1MTYyLCJuYW1lIjoiTHVuYSBLYW5nIn0.JBJbGBUIpSxt8oguBCwpeAuAUSx_GBoDTFIblxfY7v0","user":{"id":2345162,"email":"luna.kang.ca@gmail.com","created_at":"2016-06-21T19:54:19.525-04:00","updated_at":"2016-12-12T18:28:43.179-05:00","facebook_id":"10211274079914777","first_name":"Luna","last_name":"Kang","role":"user","stripe_customer_id":"cus_8gLOkAWO8EUPmc","twitter_handle":null,"skype_handle":null,"github_handle":"lkang-pdx","time_zone":"Pacific
+        Time (US \u0026 Canada)","bio":"","photo_file_name":"Women_Tech_HShots_255v2.jpg","photo_content_type":"image/jpeg","photo_file_size":2207970,"photo_updated_at":"2016-07-18T10:51:20.635-04:00","send_new_message_emails":true,"referred_by_id":null,"slug":"luna-kang","os":"OS
+        X","last_seen_at":"2016-12-12T18:28:43.114-05:00","private_profile":false,"google_plus_id":null,"linkedin":"www.linkedin.com/in/lunakang/","quota":0,"old_first_visit_id":null,"selected_enrollment_chain_id":5054,"phone_num":"","title":null,"quota_limit":0,"dribbble_handle":null,"codecademy_handle":"lkang-pdx","student_profile_id":null,"birthdate":"1980-03-15","gender":"Female","first_visit_id":null,"codewars_handle":"lkang-pdx"}}'
+    http_version: 
+  recorded_at: Mon, 12 Dec 2016 23:28:44 GMT
+- request:
+    method: get
+    uri: https://www.bloc.io/api/v1/message_threads?page=1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhcGlfa2V5IjoiNTgxYjI3NDk1YWI4NDBmZjhjMmE1ZTUxYjdiZjIyYTgiLCJ1c2VyX2lkIjoyMzQ1MTYyLCJuYW1lIjoiTHVuYSBLYW5nIn0.JBJbGBUIpSxt8oguBCwpeAuAUSx_GBoDTFIblxfY7v0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Mon, 12 Dec 2016 23:28:45 GMT
+      Connection:
+      - keep-alive
+      Strict-Transport-Security:
+      - max-age=31536000
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - '"781b3b9f0df5d4f7daa6120444a1f861"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Set-Cookie:
+      - XSRF-TOKEN=Kp6ACxOLwiSskOhwYobUzskCjJn%2Ba2rW2EnFN%2BRU11o%3D; path=/; secure
+      - _BlocAlpha_session2=QmJ1ZXNpZEtJbm1XYmtEWGt6ak5DdHVKQ3k5MWFRQytHMThtOVlHOFpsMlVnVG1yZ0llSTFzdHJEYVJDSmxOeHhnUWhFanlCT1l4cFA4TTltQUt6NjR0TEpTT3RITnlMc3JzQUNuVnN4WmJzK25ERERRL2QrbHA1NGt1TlV4bDVyeEQ5dmN6SmVZYlVGbnhrb2ZSMDE5Y2lyZll5UlYyMEtMUXJKK3pleElCS20ya2F6cWQydXAvemdKNzFndFFiWEo2QWlqd0xTVEVHT09manpvdzQ0bWsya091aS9RMlFyVlpRd3JtUXIrZlAraktNZDRIME44VVVZdlFCaURXVmQzeDcrY1RkamdyY0dqOS9HcHBFazRSZ1VkOEVOM2N4TUdrUHVjeUNGUW1kUlNIMGdGQzQ1aDV5UmhSZVBFbUgtLWJNNzJ6REJ1TDdTMTV3a1ROWXdtVkE9PQ%3D%3D--cf048f48c22bea41317660752ccb4db015ea7b10;
+        domain=.bloc.io; path=/; secure; HttpOnly
+      - ahoy_track=true; path=/; secure
+      - ahoy_visit=306809ed-ca1e-4b32-b575-f1b9cd2c9556; path=/; expires=Tue, 13 Dec
+        2016 03:28:44 -0000; secure
+      - ahoy_visitor=5e68e1e2-0b28-41c7-8ca5-2c6bbd3d982b; path=/; expires=Wed, 12
+        Dec 2018 23:28:44 -0000; secure
+      X-Request-Id:
+      - aa0337be-9d0e-4737-a50b-817947f27ca5
+      X-Runtime:
+      - '0.491585'
+      Vary:
+      - Accept-Encoding
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"items":[{"id":213873,"token":"cfe33515-7782-43c1-956f-f46709533179","subject":"Part-Time
+        Phase 3: Specialization Introduction 1 - Progress Assessment discussion","updated_at":"2016-12-12T23:22:35.793Z","unread":true,"user_image":"https://cdn-photos.bloc.io/square/623967/unnamed.jpg?1422145878","preview":"Kinsey
+        is awesome :) OK, we''ll definitely be di...","first_name":"Brittany","last_name":"Martin","page":"1"},{"id":248813,"token":"1bc553bf-8168-4b9d-a35a-9499dbde296a","subject":"Part-Time
+        Project: Backend Web Development Kele API Client 6 - Messaging discussion","updated_at":"2016-12-12T16:58:23.807Z","unread":false,"user_image":"https://cdn-photos.bloc.io/square/623967/unnamed.jpg?1422145878","preview":"Thanks
+        Britt! \n\nUpdated! https://github.com/lka...","first_name":"Brittany","last_name":"Martin","page":"1"},{"id":248787,"token":"aceb148a-0915-44e6-986c-41a05431e8d5","subject":"Part-Time
+        Project: Backend Web Development Kele API Client 5 - Roadmaps and Checkpoints
+        discussion","updated_at":"2016-12-08T19:39:24.771Z","unread":false,"user_image":"https://cdn-photos.bloc.io/square/623967/unnamed.jpg?1422145878","preview":"Thanks,
+        that worked perfectly! I just read abou...","first_name":"Brittany","last_name":"Martin","page":"1"},{"id":242038,"token":"b5ebb096-0e6e-4334-aa4f-107317d5d543","subject":"Part-Time
+        Project: Backend Web Development Blocipedia 10 - Wiki Collaborators discussion","updated_at":"2016-12-06T01:38:39.937Z","unread":false,"user_image":"https://cdn-photos.bloc.io/square/623967/unnamed.jpg?1422145878","preview":"Hmm,
+        it does look correct. Please complete the ...","first_name":"Brittany","last_name":"Martin","page":"1"},{"id":247168,"token":"7f000196-1f9c-42cb-9d75-bbc6b05833be","subject":"Sign
+        in to Slack Please","updated_at":"2016-12-02T20:44:09.317Z","unread":false,"user_image":"https://cdn-photos.bloc.io/square/623967/unnamed.jpg?1422145878","preview":"Screenhero
+        is down :/","first_name":"Brittany","last_name":"Martin","page":"1"},{"id":242035,"token":"c848ae57-3d12-4729-84d5-046a5c0493cf","subject":"Part-Time
+        Project: Backend Web Development Blocipedia 7 - Upgrading an Account discussion","updated_at":"2016-12-01T21:40:22.187Z","unread":false,"user_image":"https://cdn-photos.bloc.io/square/623967/unnamed.jpg?1422145878","preview":"Sounds
+        great! Catch up with you at 1 PM tomorrow!","first_name":"Brittany","last_name":"Martin","page":"1"},{"id":242036,"token":"2037946d-e065-48af-b3f6-9204d68f7efe","subject":"Part-Time
+        Project: Backend Web Development Blocipedia 8 - Private Wikis discussion","updated_at":"2016-11-30T20:59:26.980Z","unread":false,"user_image":"https://cdn-photos.bloc.io/square/623967/unnamed.jpg?1422145878","preview":"You
+        found a bug! I''ve copied the contents of th...","first_name":"Brittany","last_name":"Martin","page":"1"},{"id":242033,"token":"e65262cd-6ad6-4700-9aa5-b692d913f8db","subject":"Part-Time
+        Project: Backend Web Development Blocipedia 5 - User Roles discussion","updated_at":"2016-11-28T20:05:11.572Z","unread":false,"user_image":"https://cdn-photos.bloc.io/square/623967/unnamed.jpg?1422145878","preview":"I''d
+        be happy to! Thanks in advance for letting ...","first_name":"Brittany","last_name":"Martin","page":"1"},{"id":245372,"token":"d81c9a5b-8d08-4615-be64-ff9c4f203e39","subject":"New
+        Bloc Appointments -- Please Check!","updated_at":"2016-11-27T20:46:46.106Z","unread":false,"user_image":"https://cdn-photos.bloc.io/square/623967/unnamed.jpg?1422145878","preview":"Greetings,
+        Students!\r\n\r\nI''m baaaaaaack and look...","first_name":"Brittany","last_name":"Martin","page":"1"},{"id":244903,"token":"6aae7108-5249-4e32-84e9-96b4ef410cf3","subject":"Appointment
+        Change Request Next Week for Luna","updated_at":"2016-11-27T20:41:31.979Z","unread":false,"user_image":"https://cdn-photos.bloc.io/square/623967/unnamed.jpg?1422145878","preview":"Hi
+        Luna! \n\nThank you! The new schedule should n...","first_name":"Brittany","last_name":"Martin","page":"1"}],"count":43}'
+    http_version: 
+  recorded_at: Mon, 12 Dec 2016 23:28:45 GMT
+recorded_with: VCR 3.0.3
