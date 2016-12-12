@@ -24,7 +24,7 @@ class LunaGem
   end
 
   def get_messages(page_num=nil)
-    end_point = page_num == nil ? "message_threads" : "message_threads?page=#{page_num}"
+    end_point = page_num == nil ? "message_threads?page=1" : "message_threads?page=#{page_num}"
     response = self.class.get(api_url(end_point), headers: { "authorization" => @auth_token })
     JSON.parse(response.body)
   end
