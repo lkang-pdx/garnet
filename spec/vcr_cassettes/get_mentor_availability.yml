@@ -1,0 +1,119 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://www.bloc.io/api/v1/sessions
+    body:
+      encoding: UTF-8
+      string: email=<EMAIL>&password=<PASSWORD>
+    headers: {}
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Mon, 12 Dec 2016 23:28:43 GMT
+      Connection:
+      - keep-alive
+      Strict-Transport-Security:
+      - max-age=31536000
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - '"585976253fbf4790947d10e683caebd1"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Set-Cookie:
+      - XSRF-TOKEN=m510TQw%2BXCpenMpRvBwpKcKKEPnsQkEkixe%2FnzeGVkk%3D; path=/; secure
+      - _BlocAlpha_session2=T1lobEFKNDhqL1AzYjF6ZmlxVjRmdlpPSGcyY0JpMThFdjdheGp6VGNlM2xkR0JGWERIcTg0citxOCtqTmo1M3RpTnRhWWRNWUl2OTA2aGs5TWZ0UW8rcXFpWSs1T05FdVlzVXBkWWZzV0lGWmNPUDRHTU01KzBMcmdSVGV1SHhmeFpTVGJHUkQzMTFCeTRTTzFYNWxIdWxjblFHSnZ5aFV0dDhrUGRQdFlLc3ZmOWNWK1gxRWhsQUxGaUMwM09KVjcrc0R3S3NFSEp4Qkhpc0JVYzNTdz09LS0rUENmOHp5eUJNRjN5SkhHUFJISGp3PT0%3D--c3bb9aa7e5ce6f2795ed4c154154b4d3f3254e34;
+        domain=.bloc.io; path=/; secure; HttpOnly
+      - ahoy_track=true; path=/; secure
+      - ahoy_visit=67c4e90e-3b3e-49b0-bae3-df790e8f3ac0; path=/; expires=Tue, 13 Dec
+        2016 03:28:43 -0000; secure
+      - ahoy_visitor=c9861b0f-8ad5-47f2-b541-a5cc7d29b3d6; path=/; expires=Wed, 12
+        Dec 2018 23:28:43 -0000; secure
+      X-Request-Id:
+      - 09b1680b-19d1-494d-b80d-b3cc9a68f4a1
+      X-Runtime:
+      - '0.095238'
+      Vary:
+      - Accept-Encoding
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"auth_token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhcGlfa2V5IjoiNTgxYjI3NDk1YWI4NDBmZjhjMmE1ZTUxYjdiZjIyYTgiLCJ1c2VyX2lkIjoyMzQ1MTYyLCJuYW1lIjoiTHVuYSBLYW5nIn0.JBJbGBUIpSxt8oguBCwpeAuAUSx_GBoDTFIblxfY7v0","user":{"id":2345162,"email":"luna.kang.ca@gmail.com","created_at":"2016-06-21T23:54:19.525Z","updated_at":"2016-12-12T23:28:43.179Z","facebook_id":"10211274079914777","first_name":"Luna","last_name":"Kang","role":"user","stripe_customer_id":"cus_8gLOkAWO8EUPmc","twitter_handle":null,"skype_handle":null,"github_handle":"lkang-pdx","time_zone":"Pacific
+        Time (US \u0026 Canada)","bio":"","photo_file_name":"Women_Tech_HShots_255v2.jpg","photo_content_type":"image/jpeg","photo_file_size":2207970,"photo_updated_at":"2016-07-18T14:51:20.635Z","send_new_message_emails":true,"referred_by_id":null,"slug":"luna-kang","os":"OS
+        X","last_seen_at":"2016-12-12T23:28:43.114Z","private_profile":false,"google_plus_id":null,"linkedin":"www.linkedin.com/in/lunakang/","quota":0,"old_first_visit_id":null,"selected_enrollment_chain_id":5054,"phone_num":"","title":null,"quota_limit":0,"dribbble_handle":null,"codecademy_handle":"lkang-pdx","student_profile_id":null,"birthdate":"1980-03-15","gender":"Female","first_visit_id":null,"codewars_handle":"lkang-pdx"}}'
+    http_version: 
+  recorded_at: Mon, 12 Dec 2016 23:28:43 GMT
+- request:
+    method: get
+    uri: https://www.bloc.io/api/v1/mentors/<MENTOR_ID>/student_availability
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhcGlfa2V5IjoiNTgxYjI3NDk1YWI4NDBmZjhjMmE1ZTUxYjdiZjIyYTgiLCJ1c2VyX2lkIjoyMzQ1MTYyLCJuYW1lIjoiTHVuYSBLYW5nIn0.JBJbGBUIpSxt8oguBCwpeAuAUSx_GBoDTFIblxfY7v0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Mon, 12 Dec 2016 23:40:07 GMT
+      Connection:
+      - keep-alive
+      Strict-Transport-Security:
+      - max-age=31536000
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - '"a750739eb41ae6252efb9e11120ddb3d"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Set-Cookie:
+      - XSRF-TOKEN=IAek%2FyHvPgTD7XxxV6FDCsImA9lD0mXkIouv3W0YTmQ%3D; path=/; secure
+      - _BlocAlpha_session2=dm5VVW5CcHRzUWFUZG11anlrUU04VU5neFdxQ0dTdXNMRzRneVY4NDhjM0IxQ3NaYWJaNVpLZExObldPSG5sWSsxNTJiOGtlUHhubVhDSlVBUzdvemxZNURPNis5VlA4WXBqMnZ1Wk1hSktrczBOdU16cW9OQnluSkpwT0pEZFFtNEVERVNrRUxqaW1xeFBkVEdqMzVrM3B3dStIbFFqOW5ic1BhZ3hXYmVNeUVkVm04VURGTGwrbjhmRGx2YlpjVU5NU2dmOTNMNnFiNDdick1ZRnlGcHNtT0c2M2lOaTdEeHRWTnJHa1dWSnRQSzQ0Q25mc1FwL1YvQUkrVDNIMXY5Ykh0ZkFmV3ZwVkdNL0NqZFVlSldZVUpXZDU0RzVkTTVXWFdHTXpDNFVHV1JsakhYczBOdVNLV3Z5Mmwvak0tLWxob3A5bUVHZGJiUVhlZVJPTi9Nc2c9PQ%3D%3D--724ce68f0e2a688caa2d9ed3c24e1191385329b4;
+        domain=.bloc.io; path=/; secure; HttpOnly
+      - ahoy_track=true; path=/; secure
+      - ahoy_visit=39ff392f-815e-4d92-8ea4-62e933822e7d; path=/; expires=Tue, 13 Dec
+        2016 03:40:07 -0000; secure
+      - ahoy_visitor=28d5902a-72c1-4b19-81cd-eaddd538f4b1; path=/; expires=Wed, 12
+        Dec 2018 23:40:07 -0000; secure
+      X-Request-Id:
+      - ea3ccaac-1421-46bc-9a39-4fb434ca2b85
+      X-Runtime:
+      - '0.230169'
+      Vary:
+      - Accept-Encoding
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '[{"id":15180,"starts_at":"2016-12-12T23:00:00.000Z","ends_at":"2016-12-12T23:29:59.000Z","week_day":1,"booked":null},{"id":15218,"starts_at":"2016-12-15T23:30:00.000Z","ends_at":"2016-12-15T23:59:59.000Z","week_day":4,"booked":null},{"id":15221,"starts_at":"2016-12-16T01:00:00.000Z","ends_at":"2016-12-16T01:29:59.000Z","week_day":5,"booked":null},{"id":20369,"starts_at":"2016-12-15T22:30:00.000Z","ends_at":"2016-12-15T22:59:59.000Z","week_day":4,"booked":true},{"id":20806,"starts_at":"2016-12-12T22:30:00.000Z","ends_at":"2016-12-12T22:59:59.000Z","week_day":1,"booked":true}]'
+    http_version: 
+  recorded_at: Mon, 12 Dec 2016 23:40:07 GMT
+recorded_with: VCR 3.0.3

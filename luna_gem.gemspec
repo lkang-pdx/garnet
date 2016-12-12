@@ -12,4 +12,7 @@ Gem::Specification.new do |s|
     'http://rubygems.org/gems/luna_gem'
   s.license       = 'MIT'
   s.add_runtime_dependency 'httparty', '~> 0.13'
+  s.add_development_dependency 'vcr'
+  s.add_development_dependency 'webmock'
+  s.add_development_dependency 'rspec'
 end

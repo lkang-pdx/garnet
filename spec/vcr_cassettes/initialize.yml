@@ -1,0 +1,66 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://www.bloc.io/api/v1/sessions
+    body:
+      encoding: UTF-8
+      string: email=<EMAIL>&password=<PASSWORD>
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Mon, 12 Dec 2016 22:50:34 GMT
+      Connection:
+      - keep-alive
+      Strict-Transport-Security:
+      - max-age=31536000
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - '"1657060d6e07bf64986e83b1100367e0"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Set-Cookie:
+      - XSRF-TOKEN=wjFE6GiaxeV4jyQ2DfuCzqxq8ojLyjo%2BStRUqweUwo0%3D; path=/; secure
+      - _BlocAlpha_session2=NFpsMTdhbGdaYzUrZ25Geks3aHo1a3huWDNnTi9jelJHeXIxRkNEQzdsL0ZzQ2xYNjhheUo3ZDhjLzd3YlpoVW5ISDA5OUp2WTVoTGFHNnhpMW1PUW1kTGtkNFNOSjZudUpaalZva0N4djNUTHIzUHdsY1QvN1FlWkhWaUhOekVvZHI2bVNBWGxEZzBOck84b2pZWFFqTFNwRnlDNG5HcGIzbkdqdTJQdkMzZWIydWV2SW5Tdk81WVRWZnYySHBseWJYQ2VOMUdOcVNNM2k0TC9MSlNUZz09LS1RSkgwR2toWk5hQ2hRMWJ0QXVHd2JnPT0%3D--1fa598f07d747948d16ab7d8bec79a1d4561fcf7;
+        domain=.bloc.io; path=/; secure; HttpOnly
+      - ahoy_visit=eb8cc9ea-22ab-40e8-ae0c-82810f6e28a3; path=/; expires=Tue, 13 Dec
+        2016 02:50:35 -0000; secure
+      - ahoy_visitor=97e35173-0a02-464a-8519-ef2644c01840; path=/; expires=Wed, 12
+        Dec 2018 22:50:35 -0000; secure
+      X-Request-Id:
+      - 1527e0ba-cf1a-4f34-946f-f3d984b4fa61
+      X-Runtime:
+      - '0.134823'
+      Vary:
+      - Accept-Encoding
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: ASCII-8BIT
+      string: '{"auth_token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhcGlfa2V5IjoiNTgxYjI3NDk1YWI4NDBmZjhjMmE1ZTUxYjdiZjIyYTgiLCJ1c2VyX2lkIjoyMzQ1MTYyLCJuYW1lIjoiTHVuYSBLYW5nIn0.JBJbGBUIpSxt8oguBCwpeAuAUSx_GBoDTFIblxfY7v0","user":{"id":2345162,"email":"luna.kang.ca@gmail.com","created_at":"2016-06-21T23:54:19.525Z","updated_at":"2016-12-12T22:32:54.236Z","facebook_id":"10211274079914777","first_name":"Luna","last_name":"Kang","role":"user","stripe_customer_id":"cus_8gLOkAWO8EUPmc","twitter_handle":null,"skype_handle":null,"github_handle":"lkang-pdx","time_zone":"Pacific
+        Time (US \u0026 Canada)","bio":"","photo_file_name":"Women_Tech_HShots_255v2.jpg","photo_content_type":"image/jpeg","photo_file_size":2207970,"photo_updated_at":"2016-07-18T14:51:20.635Z","send_new_message_emails":true,"referred_by_id":null,"slug":"luna-kang","os":"OS
+        X","last_seen_at":"2016-12-12T22:32:54.172Z","private_profile":false,"google_plus_id":null,"linkedin":"www.linkedin.com/in/lunakang/","quota":0,"old_first_visit_id":null,"selected_enrollment_chain_id":5054,"phone_num":"","title":null,"quota_limit":0,"dribbble_handle":null,"codecademy_handle":"lkang-pdx","student_profile_id":null,"birthdate":"1980-03-15","gender":"Female","first_visit_id":null,"codewars_handle":"lkang-pdx"}}'
+    http_version: 
+  recorded_at: Mon, 12 Dec 2016 22:50:35 GMT
+recorded_with: VCR 3.0.3
