@@ -1,7 +1,7 @@
-## LunaGem
+## Garnet
 #### Written in Ruby
 
-LunaGem is a Ruby Gem API client to access the [Bloc API](http://docs.blocapi.apiary.io/#).
+Garnet is a Ruby Gem API client to access the [Bloc API](http://docs.blocapi.apiary.io/#).
 
 #### Features:
 * Retrieve the current user as a JSON blob
@@ -9,4 +9,4 @@ LunaGem is a Ruby Gem API client to access the [Bloc API](http://docs.blocapi.ap
 * Retrieve roadmaps and checkpoints
 * Retrieve a list of messages and create a new message thread
 * Submit checkpoint assignments
-* Test LunaGem using the [VCR gem](https://github.com/vcr/vcr)
+* Test Garnet using the [VCR gem](https://github.com/vcr/vcr)
